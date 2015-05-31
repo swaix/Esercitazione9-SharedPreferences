@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inputData"
+        android:text="inserisci il tuo nome" />
+
+    <EditText
+        android:id="@+id/inputData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/TextView01"
+        android:hint="nome"
+        android:text="" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputData"
+        android:layout_centerHorizontal="true"
+        android:onClick="savePreferencesData"
+        android:text="Salva Preferences" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveButton"
+        android:text="Ciao: " />
+
+    <TextView
+        android:id="@+id/outputData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView02"
+        android:layout_alignLeft="@+id/inputData"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/TextView02"
+        android:layout_toRightOf="@+id/TextView02" />
+</RelativeLayout>
